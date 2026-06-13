@@ -1,0 +1,379 @@
+
+
+<!--SE SEI VENUTO NEL CODICE PER VEDERE LE SOLUZIONI SEI VERAMENTE UNA PUSSY,
+PERO' EHI, SE HAI BISOGNO DI AIUTO PER RISOLVERE GLI ENIGMI, PERCHE' SONO TROPPO DIFFICILI PER TE...
+ECCO LE SOLUZIONI:
+
+
+
+ENIGMA 1: TU MA'
+ENIGMA 2: TU PA'
+ENIGMA 3: FANCULO
+
+ENIGMA 4: FOTTITI
+ENIGMA 5: BASTARDO
+ENIGMA 6: LEZZO
+
+ENIGMA 7: STRONZO
+ENIGMA 8: VATTENE
+ENIGMA 9: VAI A FOTTERE
+
+il cazzo te le elenco pure, non riesci a capire nemmeno quello:
+
+BUONA FORTUNA a cercare!--
+-->
+
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caccia al Tesoro per un giorno a caso dell'anno</title>
+
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    text-align:center;
+    background:#f5f5f5;
+    padding:40px;
+}
+
+.card{
+    max-width:800px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+.hidden{
+    display:none;
+}
+
+input{
+    padding:10px;
+    width:300px;
+    margin:10px;
+}
+
+button{
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+.success{
+    color:green;
+    font-weight:bold;
+}
+
+.final{
+    font-size:30px;
+    font-weight:bold;
+    color:#d35400;
+}
+</style>
+</head>
+<body>
+
+<script>
+
+function success(text){
+    document.getElementById("msg").innerText = text;
+}
+
+function wrong(){
+    alert("Risposta errata. Riprova.");
+}
+
+function check1(){
+    let a=document.getElementById("answer1").value.toLowerCase().trim();
+
+    if(a==="futuro"){
+        document.getElementById("step2").classList.remove("hidden");
+        success("Enigma 1 completato.");
+    }else wrong();
+}
+
+function check2(){
+    let a=document.getElementById("answer2").value.trim();
+
+    if(a==="56"){
+        document.getElementById("step3").classList.remove("hidden");
+        success("Enigma 2 completato.");
+    }else wrong();
+}
+
+function check3(){
+    let a=document.getElementById("answer3").value.toLowerCase().trim();
+
+    if(a==="ma"){
+        document.getElementById("step4").classList.remove("hidden");
+        success("Enigma 3 completato.");
+    }else wrong();
+}
+
+function check4(){
+    let a=document.getElementById("answer4").value.trim();
+
+    if(a==="1101"){
+        document.getElementById("step5").classList.remove("hidden");
+        success("Enigma 4 completato.");
+    }else wrong();
+}
+
+function check5(){
+    let a=document.getElementById("answer5").value.toLowerCase().trim();
+
+    if(a==="assembly"){
+        document.getElementById("step6").classList.remove("hidden");
+        success("Enigma 5 completato.");
+    }else wrong();
+}
+
+function check6(){
+    let a=document.getElementById("answer6").value.toLowerCase().trim();
+
+    if(a==="albero binario" || a==="binary tree"){
+        document.getElementById("step7").classList.remove("hidden");
+        success("Enigma 6 completato.");
+    }else wrong();
+}
+
+function check7(){
+    let a=document.getElementById("answer7").value.toLowerCase().trim();
+
+    if(a==="byte"){
+        document.getElementById("step8").classList.remove("hidden");
+        success("Enigma 7 completato.");
+    }else wrong();
+}
+
+function check8(){
+    let a=document.getElementById("answer8").value.trim();
+
+    if(a==="1024"){
+        document.getElementById("step9").classList.remove("hidden");
+        success("Enigma 8 completato.");
+    }else wrong();
+}
+
+function check9(){
+    let a=document.getElementById("answer9").value.toLowerCase().trim();
+
+    if(a==="null"){
+        document.getElementById("step10").classList.remove("hidden");
+        success("Enigma 9 completato.");
+    }else wrong();
+}
+
+
+function check10(){
+    let a=document.getElementById("answer10").value.toLowerCase().trim();
+
+    if(a==="risposta impossibile per far leggere il codice a chi non sa risolvere gli enigmi"){
+        document.getElementById("gift").classList.remove("hidden");
+        document.getElementById("msg").innerText="";
+    }else wrong();
+}
+
+</script>
+<div class="card">
+
+<h1>🎂 Caccia al Tesoro per un giorno a caso dell'anno 🎂</h1>
+
+<p>
+Per ottenere il tuo regalo dovrai dimostrare di essere degno.
+<br>
+Supera tutti gli enigmi.
+</p>
+
+<p id="msg" class="success"></p>
+
+<!-- ENIGMA 1 -->
+
+<div id="step1">
+<h2>Enigma 1</h2>
+
+<p>
+Sono sempre davanti a te ma non puoi mai raggiungermi.<br>
+Chi sono?
+</p>
+
+<input id="answer1">
+<br>
+<button onclick="check1()">Invia</button>
+</div>
+
+<!-- ENIGMA 2 -->
+
+<div id="step2" class="hidden">
+<h2>Enigma 2</h2>
+
+<p>
+Quanto fa 7 × 8?
+</p>
+
+<input id="answer2">
+<br>
+<button onclick="check2()">Invia</button>
+</div>
+
+<!-- ENIGMA 3 -->
+
+<div id="step3" class="hidden">
+<h2>Enigma 3</h2>
+
+<p>
+Completa la parola:
+<br>
+Tu __
+</p>
+
+<input id="answer3">
+<br>
+<button onclick="check3()">Invia</button>
+</div>
+
+<!-- ENIGMA 4 -->
+
+<div id="step4" class="hidden">
+<h2>Enigma 4</h2>
+
+<p>
+In binario, quanto vale il numero decimale 13?
+</p>
+
+<input id="answer4">
+<br>
+<button onclick="check4()">Invia</button>
+</div>
+
+<!-- ENIGMA 5 -->
+
+<div id="step5" class="hidden">
+<h2>Enigma 5</h2>
+
+<p>
+Sono il linguaggio più vicino all'hardware.<br>
+Non sono il codice macchina.<br>
+Chi sono?
+</p>
+
+<input id="answer5">
+<br>
+<button onclick="check5()">Invia</button>
+</div>
+
+<!-- ENIGMA 6 -->
+
+<div id="step6" class="hidden">
+<h2>Enigma 6</h2>
+
+<p>
+Se un algoritmo ha complessità O(log n),
+quale struttura dati viene comunemente usata per la ricerca?
+</p>
+
+<input id="answer6">
+<br>
+<button onclick="check6()">Invia</button>
+</div>
+
+<!-- ENIGMA 7 -->
+
+<div id="step7" class="hidden">
+<h2>Enigma 7</h2>
+
+<p>
+Ho 8 bit.<br>
+Posso rappresentare 256 valori distinti.<br>
+Chi sono?
+</p>
+
+<input id="answer7">
+<br>
+<button onclick="check7()">Invia</button>
+</div>
+
+<!-- ENIGMA 8 -->
+
+<div id="step8" class="hidden">
+<h2>Enigma 8</h2>
+
+<p>
+Quanto vale 2^10 ?
+</p>
+
+<input id="answer8">
+<br>
+<button onclick="check8()">Invia</button>
+</div>
+
+<!-- ENIGMA 9 -->
+
+<div id="step9" class="hidden">
+<h2>Enigma 9</h2>
+
+<p>
+Esisto ovunque in informatica.<br>
+Vengo usato per indicare assenza di valore.<br>
+In molti linguaggi mi chiamo NULL.<br>
+Chi sono?
+</p>
+
+<input id="answer9">
+<br>
+<button onclick="check9()">Invia</button>
+</div>
+
+<!-- ENIGMA 10 -->
+
+<div id="step10" class="hidden">
+<h2>Enigma 10</h2>
+
+<p>
+Arinza Arunza<br>
+Pietro Smusi<br>
+Mhanz<br>
+Chi sono?
+</p>
+
+<input id="answer10">
+<br>
+<button onclick="check10()">Invia</button>
+</div>
+
+<!-- REGALO -->
+
+<div id="gift" class="hidden">
+
+<h1>🎉 COMPLIMENTI 🎉</h1>
+
+<p class="final">
+HAI COMPLETATO LA CACCIA AL TESORO
+</p>
+
+<p class="final">
+🎁 IL TUO REGALO È:
+</p>
+
+<p class="final">
+💝 Un joystick Bianco che è gia in tuo possesso! 💝
+    come si dice, non siamo più parenti :D 
+</p>
+
+<p>
+se mi rompi i coglioni che non lo vuoi ti rompo le gambe, è un regalo, accettalo e basta.
+</p>
+
+</div>
+
+</div>
+
+
+</body>
+</html>
+```
